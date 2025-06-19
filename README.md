@@ -5,6 +5,7 @@
 [![License](https://img.shields.io/badge/License-MIT-yellow)](LICENSE)
 
 Build your own autonomous RC car using computer vision and deep learning!
+By Amer Blboheath
 
 ## Project Overview
 
