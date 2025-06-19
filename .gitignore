@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv
+
+# Data files
+data/
+!data/.gitkeep
+models/
+!models/.gitkeep
+*.h5
+*.tflite
+*.pkl
+
+# Logs
+logs/
+*.log
+reports/
+!reports/.gitkeep
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Config
+config/config.yaml
+!config/config.example.yaml
+
+# Temporary files
+*.tmp
+*.bak
+~*

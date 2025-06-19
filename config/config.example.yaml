@@ -1,0 +1,55 @@
+# Self-Driving RC Car Configuration
+
+# Hardware pins (BCM numbering)
+hardware:
+  motors:
+    left_forward: 17
+    left_backward: 18
+    right_forward: 22
+    right_backward: 23
+    pwm_frequency: 1000
+  
+  sensors:
+    ultrasonic:
+      trigger: 24
+      echo: 25
+    camera:
+      device: 0
+      width: 640
+      height: 480
+      fps: 30
+
+# Driving parameters
+control:
+  max_speed: 0.8
+  min_speed: 0.2
+  steering_gain: 1.2
+  lookahead_distance: 0.5
+  max_steering_angle: 30
+
+# Model parameters
+model:
+  input_shape: [120, 160, 3]
+  learning_rate: 0.0001
+  batch_size: 32
+  epochs: 50
+
+# Safety settings
+safety:
+  emergency_stop_distance: 15
+  max_acceleration: 0.5
+  enable_boundary_check: true
+
+# Data collection settings
+data_collection:
+  image_size: [160, 120]
+  fps: 20
+  steering_smoothing: 0.1
+  save_format: "jpg"
+
+# Logging
+logging:
+  level: "INFO"
+  file: "logs/rc_car.log"
+  max_size: "10MB"
+  backup_count: 5
